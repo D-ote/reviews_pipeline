@@ -19,7 +19,7 @@ import googleapiclient.discovery
 # Set up API credentials
 api_service_name = "youtube"
 api_version = "v3"
-DEVELOPER_KEY = "AIzaSyBhli20lTSkWKuiuxPjvvAc2TQn_Zn-YTY"
+DEVELOPER_KEY = "****-YTY"
 
 # Initialize the YouTube API client
 youtube = googleapiclient.discovery.build(
@@ -151,7 +151,7 @@ df.head()
 
 # %%
 conn = psycopg2.connect(
-    dbname="api_data", user="postgres", password="Wueseter1!", host="localhost", port="5432"
+    dbname="api_data", user="postgres", password="1234!", host="localhost", port="5432"
 )
 cur = conn.cursor()
 
@@ -174,7 +174,7 @@ conn.close()
 # %%
 # crontab -e
 
-# 0 0 * * * /Users/dooterior/Desktop/projects/pipeline/pipeline/bin/python /Users/dooterior/Desktop/projects/pipeline/ytcomments.py
+# 0 0 * * * /usr/bin/python3 /path/to/ytpipeline.py
 
 #:wq
 
